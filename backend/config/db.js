@@ -22,10 +22,4 @@ const sequelize = new Sequelize(
         port: dbPort
     });
 
-// sequelize.query("SELECT * FROM tb_usuario")
-//   .then(([resultados]) => {
-//     console.log(resultados);
-//   })
-//   .catch((error) => console.log(`Erro na consulta: ${error}`));
-
 export { sequelize }; // export nomeado. ao importar precisa colocar o mesmo nome do arquivo de origem

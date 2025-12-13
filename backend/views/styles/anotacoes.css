@@ -1,0 +1,115 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0 auto;
+    /* deixar no meio ser precisar ter um elemento pai-flex */
+
+    padding-top: 35px;
+
+    gap: 35px;
+}
+
+.cabecalho>div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cabecalho>div>a {
+    color: var(--amarelo-escuro);
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#cadastro-anotacoes {
+    width: 100%;
+    height: 53px;
+
+    display: flex;
+
+    padding: 5px;
+    background-color: var(--cinza);
+}
+#cadastro-anotacoes>input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-weight: 300;
+}
+#cadastro-anotacoes>button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.anotacoes {
+    width: 100%;
+    min-height: calc(5% - 100vh - 35px);
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 40px;
+}
+
+.anotacoes>div {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.card_anotacao {
+    width: 100%;
+}
+
+.card_anotacao>form {
+    background-color: var(--amarelo-claro);
+    border-radius: 1px;
+    padding: 10px;
+}
+
+.card_anotacao__acoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+}
+
+.card_anotacao__acoes>button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.anotacao_visualizacao,
+.anotacao_edicao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 70px;
+}
+
+.anotacao_visualizacao>label {
+    font-weight: 700;
+}
+
+.anotacao_edicao>input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.anotacao__finalizada {
+    text-decoration: line-through;
+}
+
+.anotacao__andamento {
+    text-decoration: none;
+}

@@ -7,6 +7,8 @@ const routes = Router();
 routes
     .get("/anotacao", anotacaoController.listar)
     .get("/anotacao/:id", anotacaoController.obterPorID)
-    .post("anotacao", anotacaoController.criar);
+    .post("/anotacao", anotacaoController.criar)
+    .patch("/anotacao/:id", anotacaoController.atualizar)
+    .delete("/anotacao/:id", anotacaoController.deletar);
 
 export default routes;
